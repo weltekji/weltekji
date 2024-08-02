@@ -1,0 +1,1101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Background to Body */
+body {
+    background: url('img/background image.png') center center / cover no-repeat;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Main section */
+.main {
+    width: 100%;
+    min-height: 109vh; /* Use min-height to ensure it covers the viewport */
+}
+
+/* Sticky Header */
+.header {
+    width: 100%;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for visibility */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding on the sides */
+}
+
+/* Logo and Icon */
+.icon {
+    width: 200px;
+    height: 70px;
+    background-image: url('img/MY logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+/* Navigation Menu */
+.menu {
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+ul li {
+    margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: yellow;
+}
+
+/* Search Box */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    font-family: 'Times New Roman', serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid yellow;
+    border-right: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.srch::placeholder {
+    color: #fff;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: grey;
+    border: 2px solid yellow;
+    color: black;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+.btn:focus,
+.srch:focus {
+    outline: none;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 20px; /* Space above the social media icons */
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 10px; /* Space between icons */
+}
+
+.social-icon {
+    font-size: 24px; /* Size of the icons */
+    color: #fff; /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.social-icon:hover {
+    color: yellow; /* Change color on hover */
+}
+
+.social-icon i {
+    margin: 0 5px; /* Add space around the icons if needed */
+}
+
+
+/* About Page Styles */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 75px); /* Full height minus header */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 200; /* Center the content */
+    
+}
+
+.about-content h1, .about-content p {
+    margin-bottom: 20px;
+    color: white;
+    
+}
+
+.about-content img {
+    display: block;
+    margin: 20px auto 0; /* Center the image horizontally */
+    width: 100px; /* Adjust width (5x5 pixels or desired size) */
+    height: 100px; /* Adjust height (5x5 pixels or desired size) */
+    border-radius: 50%; /* Circular image */
+    border: 3px solid yellow; /* Border style */
+    page
+    
+}
+
+
+ 
+/* Container for side-by-side layout */
+.container {
+    display: flex;
+    justify-content: space-between; /* Space out the sections */
+    align-items: flex-start; /* Align items to the top */
+}
+
+
+
+
+
+
+/* Promotion Section */
+/* Promotion Section */
+.promotion {
+    display: flex; /* Use flexbox for side-by-side layout */
+    align-items: center; /* Vertically align items to the center */
+    padding: 50px; /* Adjust padding as needed */
+    background-color:rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    gap: 20px; /* Space between image and text */
+    margin-top: 50px; /* Adjust this value to create space from the header */
+}
+
+
+.promo-image {
+    max-width: 250px; /* Set a max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.promo-text {
+    max-width: calc(100% - 270px); /* Ensure text container fits next to the image */
+    text-align: justify; /* Justify text alignment */
+}
+
+/* Ensure text container stretches appropriately */
+.promo-text h1 {
+    font-size: 2em;
+    color:yellow;
+    margin-bottom: 10px;
+    text-decoration: solid;
+     
+}
+
+.promo-text p {
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* Authentication Section */
+.auth {
+    flex: 1; /* Make the auth section smaller */
+    padding: 20px; /* Increased padding for better spacing inside the box */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+
+/* Tabs in Authentication Section */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    width: 50%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-button.active {
+    background: yellow;
+    color: black;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.tab-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-content input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tab-content input::placeholder {
+    color: #fff;
+}
+
+.tab-content button {
+    width: 100%;
+    height: 35px;
+    background: grey;
+    border: 2px solid yellow;
+    color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.tab-content button:hover {
+    background: white;
+    color: black;
+}
+
+.tab-content button:focus {
+    outline: none;
+}
+
+
+/* General Body Styling to Push Footer to Bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
+/*Abeekoo inni kanaa GADII footer is sign in fi up gajjallaatiifi*/
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around the content */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Full width */
+    clear: both; /* Ensure it clears floats */
+}
+
+/* Footer Content */
+.footer-content {
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.footer-links li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Spacing between items */
+}
+
+.footer-links a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Font size */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* Social Media Icons */
+.social-media-footer {
+    margin: 10px 0; /* Margin for spacing */
+    text-align: center; /* Center the icons */
+}
+
+.social-icon {
+    font-size: 24px; /* Size of icons */
+    color: #fff; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.social-icon:hover {
+    color: yellow; /* Change color on hover */
+}
+/*Abeekoo inni kanaa olii footer is sign in fi up gajjallaatiifi*/
+
+
+
+
+
+
+
+
+
+
+/* Product Showcase Section */
+.product-showcase {
+    background-color: #f5f5f5; /* Light background color */
+    padding: 50px 20px; /* Padding for spacing around the section */
+    text-align: center; /* Center the text and content */
+    margin-top: 50px; /* Space above the section to prevent overlap */
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.product-image {
+    width: 100%;
+    max-width: 600px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.product-title {
+    font-size: 36px; /* Large title font size */
+    color: #333; /* Dark text color */
+    margin: 20px 0; /* Margin around the title */
+}
+
+.product-description {
+    font-size: 18px; /* Readable font size */
+    color: #666; /* Medium dark text color */
+    margin-bottom: 10px; /* Space below the description */
+    line-height: 1.6; /* Line height for readability */
+    max-width: 800px; /* Maximum width for text */
+}
+
+.product-price {
+    margin: 20px 0; /* Space around the price and offer */
+    font-size: 22px; /* Font size for price information */
+    color: #e74c3c; /* Red color for emphasis */
+}
+
+.price {
+    display: block; /* Display price on a new line */
+    font-weight: bold; /* Make the price bold */
+}
+
+.offer {
+    display: block; /* Display offer on a new line */
+    font-size: 18px; /* Slightly smaller font size for the offer */
+    color: #2ecc71; /* Green color for free delivery */
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 7px; /* Padding for button */
+    font-size: 18px; /* Font size of button text */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none;
+
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Product Gallery Section */
+.product-gallery {
+    margin-top: 30px; /* Space above the gallery */
+}
+
+.gallery-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flex container for horizontal alignment */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Space between images */
+}
+
+.gallery-image {
+    width: 200px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #f9f9f9; /* Light background color for the form section */
+    padding: 50px 20px; /* Padding around the form */
+    text-align: center; /* Center the text and content */
+}
+
+.form-container {
+    max-width: 600px; /* Maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background: #fff; /* White background for the form */
+    padding: 20px; /* Padding inside the form container */
+    border-radius: 8px; /* Rounded corners for the form container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    font-size: 28px; /* Title font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+label {
+    font-size: 16px; /* Font size for labels */
+    color: #555; /* Medium dark text color */
+    text-align: left; /* Align text to the left */
+}
+
+input {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size for input text */
+}
+
+input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+button.btn {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 15px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 18px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles for Contact Page */
+.contact-main {
+    
+    padding: 50px 20px; /* Padding for the contact page content */
+    background: url('img/background image.png') center center / cover no-repeat;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    
+}
+
+.contact-form {
+    background-color: #fff; /* Background color of the form section */
+    padding: 30px; /* Padding inside the form section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 800px; /* Maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact-form h1 {
+    font-size: 36px; /* Font size for the heading */
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.contact-form label {
+    font-size: 16px; /* Font size for labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 16px;
+    font-weight: bold; /* Font size for input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+}
+
+.contact-form button {
+    padding: 15px 30px; /* Padding inside button */
+    font-size: 18px; /* Font size of button text */
+    color: #fff; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles for Contact Page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+}
+
+#country-code {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#phone {
+    flex: 3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+/*AKka bold ta'uuf*/
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Padding inside footer */
+    text-align: center; /* Center text */
+}
+
+.footer .social-media {
+    margin-top: 10px; /* Space above social media icons */
+}
+
+.footer .social-media a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer .social-media img {
+    width: 24px; /* Size of social media icons */
+    height: auto; /* Maintain aspect ratio */
+}
+/*AKka bold ta'uuf*/
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Addarraa Akka sosochouu gochuufidha*/
+
+/* Sticky Header */
+.header {
+    width: 100%;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for visibility */
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding on the sides */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hiding and showing */
+}
+
+/*Addarraa Akka sosochouu gochuufidha*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjust body padding to account for fixed header */
+body {
+    padding-top: 75px; /* Height of the header */
+}
+
+
+
+
+/* Design Page Specific Styles */
+
+/* Hero Section for Design Page */
+.hero {
+    background: url('img/pexels-pixabay-531880.jpg') no-repeat center center/cover;
+    padding: 80px 20px; /* Increased padding for better spacing */
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5em; /* Adjusted font size for prominence */
+    margin-bottom: 20px;
+     
+    color: rgb(235, 228, 9); /* Correct color property */
+}
+
+/* Scoped styles for the hero section only */
+.hero {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height for demonstration */
+    background-color: #f8f9fa; /* Background color for visibility */
+}
+
+.hero .container {
+    text-align: center; /* Center text within the container */
+    max-width: 800px; /* Limit container width for better readability */
+    margin: auto; /* Center container horizontally */
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center children vertically */
+    height: 100%; /* Full height of the hero section */
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space between the paragraph and the button */
+    min-width: 200px;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* Services Section */
+.services {
+    padding: 60px 20px; /* Increased padding for better spacing */
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin for separation */
+    font-size: 2em; /* Adjusted font size for prominence */
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for spacing between items */
+    flex: 1 1 300px; /* Responsive sizing */
+}
+
+.service-item img {
+    width: 150px; /* Adjusted width for better visual balance */
+    height: 200px; /* Set to your desired height */
+    object-fit: cover; /* Adjusts the image to cover the container while preserving aspect ratio */
+    margin-bottom: 15px; /* Space between image and text */
+    margin-right: 250px;
+}
+
+.service-item h3 
+{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.service-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+    text-align: justify; /* Center text for better visual alignment */
+    margin-right: 250px;
+
+
+}
+
+/* Process Section */
+.process {
+    padding: 40px 20px;
+}
+
+.process h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333 ;
+}
+
+.process ol {
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 20px;
+    color: #333;
+}
+
+.process li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Call to Action Section */
+.cta {
+    background: #eaeaea;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    color:#333;
+}
+
+.cta p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color:#333;
+}
+.cta a
+{
+    margin-top: -10px;
+     
+    width: 200px;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #f30606;
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.phone-container {
+    display: flex;
+    align-items: center;
+}
+
+#country-code {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+#phone {
+    flex: 3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+

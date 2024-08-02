@@ -1,0 +1,224 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply Background to Body */
+body {
+    background: url('img/background image.png') center center / cover no-repeat;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Main section */
+.main {
+    width: 100%;
+    min-height: 109vh; /* Use min-height to ensure it covers the viewport */
+}
+
+/* Sticky Header */
+.header {
+    width: 100%;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for visibility */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding on the sides */
+}
+
+/* Logo and Icon */
+.icon {
+    width: 200px;
+    height: 70px;
+    background-image: url('img/MY logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+/* Navigation Menu */
+.menu {
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: 20px; /* Adjust spacing between menu items */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: yellow;
+}
+
+/* Search Box */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    font-family: 'Times New Roman', serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid yellow;
+    border-right: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.srch::placeholder {
+    color: #fff;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #007bff;
+    border: 2px solid yellow;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+.btn:focus,
+.srch:focus {
+    outline: none;
+}
+
+/* Main content styles */
+.about-main {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for visibility */
+    text-align: center;
+}
+
+.about-main h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-item {
+    margin-bottom: 30px;
+}
+
+.about-item p {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-item img {
+    width: 100px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+.about-item h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 20px; /* Padding inside footer */
+    text-align: center; /* Center text */
+    padding-bottom: 0px;
+    margin-top: 50px;
+}
+
+.footer .social-media {
+    margin-top: 10px; /* Space above social media icons */
+}
+
+.footer .social-media a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.footer .social-media img {
+    width: 24px; /* Size of social media icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+.footer-content p {
+    padding-bottom: 10px;
+}
+
+.footer-content ul {
+    padding-bottom: 10px;
+}
+
+.footer-links:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    background: white;
+    background-color: #333;
+    color: #fff;
+    padding-left: 20px;
+    margin: 0px 5px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: yellow;
+}
