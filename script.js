@@ -92,3 +92,20 @@ document.addEventListener('DOMContentLoaded', function() {
         countryCodeSelect.appendChild(option);
     });
 });
+
+
+//Digital Hour Program
+
+function updateclock()
+{
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const timeString = `${hours}:${minutes}:${seconds}`;
+
+    document.getElementById("clock").textContent = timeString;
+
+}
+updateclock();
+setInterval(updateclock, 1000);
